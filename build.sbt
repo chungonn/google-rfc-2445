@@ -4,7 +4,12 @@ organization := "com.greenfossil"
 
 version := "1.0.0"
 
-scalaVersion := "2.11.8"
+
+//Do not append scala versions to the generated artifacts
+crossPaths := false
+
+//This forbids including scala related libraries into the dependency
+autoScalaLibrary := false
 
 lazy val rfc2445 = (project in file("."))
 
