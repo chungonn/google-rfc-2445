@@ -6,7 +6,7 @@ version := "1.0.0"
 
 scalaVersion := "2.11.8"
 
-lazy val root = (project in file("."))
+lazy val rfc2445 = (project in file("."))
 
 resolvers ++= Seq(
   "GF Release" at "http://www.greenfossil.com:8081/nexus/content/groups/public/",
