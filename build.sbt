@@ -2,7 +2,7 @@ name := "google-rfc-2445"
 
 organization := "com.greenfossil"
 
-version := "1.0.0"
+version := "1.1.0"
 
 
 //Do not append scala versions to the generated artifacts
@@ -20,8 +20,4 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "joda-time" % "joda-time" % "2.9.4" % "provided",
-  "org.joda" % "joda-convert" % "1.8.1" % "provided",
-  "org.apache.logging.log4j" % "log4j-api" % "2.6.1" % "provided",
-  "org.apache.logging.log4j" % "log4j-core" % "2.6.1" % "provided"
 )

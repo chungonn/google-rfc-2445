@@ -12,18 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ical.compat.jodatime;
+package com.google.ical.compat.javatime;
 
-import org.joda.time.LocalDate;
-import java.util.Iterator;
+import java.time.LocalDateTime;
 
-public interface LocalDateIterator extends Iterator<LocalDate> {
+/**
+ * an iterable over dates in order.
+ *
+ * @author mikesamuel+svn@gmail.com (Mike Samuel)
+ */
+public interface LocalDateTimeIterable extends Iterable<LocalDateTime> {
 
-  /**
-   * skips all dates in the series before the given date.
-   *
-   * @param newStart non null.
-   */
-  void advanceTo(LocalDate newStart);
+  LocalDateTimeIterator iterator();
 
 }
